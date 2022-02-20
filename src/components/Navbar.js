@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Carro from './Carro';
 import Logo from './Logo';
 
 
@@ -24,7 +25,7 @@ class Nabvar extends Component {
         return (
             <nav style={styles.navbar}>
                 <Logo />
-                <p>Carro</p>
+                <Carro />
             </nav>
         );
     }
