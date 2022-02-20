@@ -15,10 +15,13 @@ class App extends Component{
   render(){
     return(
       <div>
-        <Productos
-          agregarAlCarrov={ ()=> console.log('No hace nada')}
-          productos = {this.state.productos}
-        />       
+        <Layout>
+          <Productos
+            agregarAlCarrov={ ()=> console.log('No hace nada')}
+            productos = {this.state.productos}
+          />    
+        </Layout>
+          
         
       </div>
     )
