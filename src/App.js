@@ -3,6 +3,7 @@ import Productos from './components/Productos'
 import Layout from './components/Layout'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
+import Logo from './components/Logo'
 
 
 
