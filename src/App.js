@@ -13,18 +13,30 @@ class App extends Component{
       {name: 'Tomate', price: 1500, img: '/productos/tomate.jpg' },
       {name: 'Arbejas', price: 2500, img: '/productos/Arbejas.jpg' },
       {name: 'Lechuga', price: 500, img: '/productos/lechuga.jpg' }
-    ]
+    ],
+    carro:[
+      //{name: 'Tomate', price: 1500, img: '/productos/tomate.jpg' , cantidad: 1},
+    ],
+  }
+
+  agregarAlCarro = (producto) =>{
+    return this.setState({
+      carro: this.state.carro.concat({
+        ...producto, cantidad: 1,
+      })
+    })
   }
 
 
   render(){
+    console.log.(this.state.carro)
     return(
       <div>
         <Navbar/>
         <Layout>
           <Title />
           <Productos
-            agregarAlCarrov={ ()=> console.log('No hace nada')}
+            agregarAlCarro={ this.agregarAlCarro() }
             productos = {this.state.productos}
           />    
         </Layout>
