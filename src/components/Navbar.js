@@ -22,10 +22,11 @@ class Nabvar extends Component {
      
    
     render() { 
+        const {carro} = this.props
         return (
             <nav style={styles.navbar}>
                 <Logo />
-                <Carro />
+                <Carro carro={carro}/>
             </nav>
         );
     }
