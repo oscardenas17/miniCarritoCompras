@@ -22,11 +22,17 @@ class Nabvar extends Component {
      
    
     render() { 
-        const {carro} = this.props
+        const {carro, esCarroVisible, mostrarCarro} = this.props
         return (
             <nav style={styles.navbar}>
                 <Logo />
-                <Carro carro={carro}/>
+
+                {/* pasamos al carro la propiedad del carro desde el app */}
+                <Carro 
+                    carro={carro}
+                    esCarroVisible={esCarroVisible}
+                    mostrarCarro={mostrarCarro}
+                />     
             </nav>
         );
     }
